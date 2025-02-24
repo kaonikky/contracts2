@@ -1,0 +1,72 @@
+/* Main styles */
+.stApp {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Headers */
+h1 {
+    color: #1f77b4;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+h2, h3 {
+    color: #2c3e50;
+    margin-top: 1.5rem;
+}
+
+/* Metrics styling */
+[data-testid="stMetricValue"] {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1f77b4;
+}
+
+/* Warning/Alert boxes */
+.stAlert {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Forms */
+.stForm {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+/* Buttons */
+.stButton button {
+    background-color: #1f77b4;
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.stButton button:hover {
+    background-color: #145c8e;
+}
+
+/* Status indicators */
+[data-testid="stDataFrameCell"]:has(div:contains("Действующий")) {
+    color: #28a745 !important;
+    font-weight: bold;
+}
+
+[data-testid="stDataFrameCell"]:has(div:contains("Необходимо продлить")) {
+    color: #ffc107 !important;
+    font-weight: bold;
+}
+
+[data-testid="stDataFrameCell"]:has(div:contains("Договор истек")) {
+    color: #dc3545 !important;
+    font-weight: bold;
+}
+
+[data-testid="stDataFrameCell"]:has(div:contains("Ошибка в дате")) {
+    color: #6c757d !important;
+    font-weight: bold;
+}
